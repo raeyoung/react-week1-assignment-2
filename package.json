@@ -1,8 +1,13 @@
 {
   "name": "react-week1",
   "version": "1.0.0",
+  "private": true,
   "description": "",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raeyoung/react-week1-assignment-2.git"
+  },
   "scripts": {
     "start": "webpack-dev-server",
     "test:e2e": "codeceptjs run --steps",
