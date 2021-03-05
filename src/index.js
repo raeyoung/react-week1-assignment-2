@@ -20,16 +20,16 @@ function createElement(tagName, props, ...children) {
   return element;
 }
 
-function defaultFunction(x, y) {
-  return x || y;
-}
-
 const operatorFunctions = {
   '+': (x, y) => x + y,
   '-': (x, y) => x - y,
   '*': (x, y) => x * y,
   '/': (x, y) => x / y,
 };
+
+function defaultFunction(x, y) {
+  return x || y;
+}
 
 function caculate(operator, accumulator, number) {
   return (operatorFunctions[operator] || defaultFunction)(accumulator, number);
